@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vuetify from './plugins/vuetify'
+import useVuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
 new Vue({
-  vuetify,
+  vuetify: useVuetify(null),
   render: h => h(App)
 }).$mount('#app')
